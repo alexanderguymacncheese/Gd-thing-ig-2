@@ -1,0 +1,50 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "yourname.dynamic",
+	"name": "Dynamic",
+	"version": "v1.1.0",
+	"developer": "yourname",
+	"description": "Click buffer: a jump pressed a few frames early is held and applied when it becomes usable (landing or touching an orb).",
+	"tags": ["gameplay", "utility"],
+	"resources": {
+		"spritesheets": {}
+	},
+	"settings": {
+		"enabled": {
+			"type": "bool",
+			"name": "Enabled",
+			"description": "Turn the click buffer on or off.",
+			"default": true
+		},
+		"buffer-frames": {
+			"type": "int",
+			"name": "Buffer (frames)",
+			"description": "How many frames early a click can be. Frames of a 60 FPS recording (1 frame is about 16.7 ms).",
+			"default": 2,
+			"min": 1,
+			"max": 10,
+			"control": {
+				"input": true,
+				"slider": true
+			}
+		},
+		"buffer-orbs": {
+			"type": "bool",
+			"name": "Buffer orbs",
+			"description": "Early clicks activate an orb you touch within the buffer window.",
+			"default": true
+		},
+		"buffer-ground": {
+			"type": "bool",
+			"name": "Buffer ground jumps",
+			"description": "Early clicks make you jump when you land within the buffer window (cube, ball, robot, spider).",
+			"default": true
+		}
+	}
+}
