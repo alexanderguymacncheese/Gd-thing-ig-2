@@ -26,7 +26,7 @@
 			"type": "int",
 			"name": "Buffer (frames)",
 			"description": "How many frames early a click can be. Frames of a 60 FPS recording (1 frame is about 16.7 ms).",
-			"default": 2,
+			"default": 5,
 			"min": 1,
 			"max": 10,
 			"control": {
